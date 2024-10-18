@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "helvetica";
+    src: url("../assets/fonts/helvetica-255/Helvetica.ttf") format("ttf");
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "helvetica";
+    padding: 0;
+    margin: 0;
+}
+
+body , html {
+    background-color: #BDBDBD;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 380px;
+    height: 680px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    outline: solid 8px rgb(58, 58, 58);
+    margin: 10px;
+}
+
+.result{
+    display: flex;
+    justify-content: end;
+}
+
+.input-calculator{
+    width: 310px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-size: 54px;
+    text-align: right;
+}
+
+.opration{
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 150ms ease-in;
+}
+
+.top-buttons{
+    background-color: #A5A5A5;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+.top-buttons :active{
+    background-color: #aaaaaa;
+}
+
+.right-button{
+    background-color: #FF9F0A;
+    color: white;
+    border: none;
+}
+
+.number{
+    border: none;
+    background-color: #505050;
+    color: white;
+}
+
+.number :active{
+    background-color: #797979;
+}
+
+.delete-img{
+    height: 150px;
+    width: 150px;
+}
+
+.delete-img{
+    margin-top: 20px;
+    margin-right: 10px;
+
+}
+
+.delete-img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+}
+
+.opration-sign{
+    font-size: 45px;
+}
+
+.minus{
+    padding-bottom: 55px;
+}

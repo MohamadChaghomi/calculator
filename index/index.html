@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="result">
+                <input class="input-calculator" type="text" id="calculatorOutput" readonly>
+            </div>
+            <div class="opration">
+                <button class="item ac top-buttons" onclick="clearOutput()">AC</button>
+                <button class="item sign top-buttons" onclick="toggleSign()">+/-</button>
+                <button class="item percentage top-buttons" onclick="setOperator('%')">%</button>
+                <button class="item division right-button opration-sign" onclick="setOperator('÷')">÷</button>
+                <button class="item number" onclick="addToOutput('7')">7</button>
+                <button class="item number" onclick="addToOutput('8')">8</button>
+                <button class="item number" onclick="addToOutput('9')">9</button>
+                <button class="item multiply right-button opration-sign" onclick="setOperator('×')">×</button>
+                <button class="item number" onclick="addToOutput('4')">4</button>
+                <button class="item number" onclick="addToOutput('5')">5</button>
+                <button class="item number" onclick="addToOutput('6')">6</button>
+                <button class="item minus right-button opration-sign minus" onclick="setOperator('-')">_</button>
+                <button class="item number" onclick="addToOutput('1')">1</button>
+                <button class="item number" onclick="addToOutput('2')">2</button>
+                <button class="item number" onclick="addToOutput('3')">3</button>
+                <button class="item plus right-button opration-sign" onclick="setOperator('+')">+</button>
+                <button class="item number delete" onclick="removeLastDigit()"><img src="../assets/svg/delete-svgrepo-com.svg" alt="" class="delete-img"></button>
+                <button class="item number number0" onclick="addToOutput('0')">0</button>
+                <button class="item number dote" onclick="addDecimal()">.</button>
+                <button class="item equal right-button opration-sign" onclick="calculate()">=</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="../js/jsavascript.js"></script>
+</body>
+</html>
