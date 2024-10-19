@@ -80,7 +80,7 @@ body , html {
     font-size: 30px;
 }
 
-.top-buttons :active{
+.top-buttons:active{
     background-color: #aaaaaa;
 }
 
@@ -90,13 +90,18 @@ body , html {
     border: none;
 }
 
+.right-button:active{
+    background-color: #f8b756;
+}
+
+
 .number{
     border: none;
     background-color: #505050;
     color: white;
 }
 
-.number :active{
+.number:active{
     background-color: #797979;
 }
 
